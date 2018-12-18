@@ -1,6 +1,8 @@
 html, body {
   height: 100%;
-  font-family: 'Open Sans', sans-serif
+  font-family: 'Open Sans', sans-serif;
+  background: black;
+  color: white;
 }
 
 body {
@@ -26,13 +28,13 @@ body {
 }
 
 .board div {
-  color: green;
+  color: white;
   font-size: 2rem;
   width: 75px;
   height: 75px;
-  border: 1px #ccc dotted;
+  border: 1px solid white;
   border-radius: 10%;
-  background-color: white;
+  background-color: black;
   margin: 3px;
   display: flex;
   align-items: center;
@@ -41,10 +43,12 @@ body {
 
 .board div:hover {
   background-color: white;
+  color: black;
 }
 
 div.mine, div.mine:hover {
-  background: no-repeat center/60% url("images/bomb.svg") crimson;
+  background: crimson;
+  /* no-repeat center/60% url("images/bomb.svg") */
 }
 
 div.hidden {
@@ -56,5 +60,6 @@ div.hidden:hover {
 }
 
 div.marked, div.marked:hover {
-  background: no-repeat center/60% url("images/mark.svg") deepskyblue;
+  background: deepskyblue;
+  /* no-repeat center/60% url("images/mark.svg") */
 }
